@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Todo.module.css";
 
 const Todo = ({ todo }) => {
   return (
-    <div>
-      <h3>{todo}</h3>
+    <div className={styles.todo}>
+      <div className={styles.todoText}>{todo}</div>
     </div>
   );
 };

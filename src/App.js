@@ -8,7 +8,6 @@ function App() {
 
   const addTodoHandler = (text) => {
     setTodos([...todos, text]);
-    console.log();
   };
   return (
     <div className="App">
