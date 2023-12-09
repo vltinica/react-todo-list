@@ -1,12 +1,6 @@
 import React from "react";
 import Todo from "./Todo";
 
-export const TodoList = () => {
-  return (
-    <div>
-      <Todo />
-      <Todo />
-      <Todo />
-    </div>
-  );
+export const TodoList = ({ todos }) => {
+  return todos.map((todo, index) => <Todo key={index} todo={todo} />);
 };
